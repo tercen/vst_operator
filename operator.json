@@ -1,10 +1,16 @@
 {
-  "name": "Template_R_operator",
-  "description": "Calculate the mathamatical average of the data points in a cell.",
-  "tags": ["basic statistics"],
+  "name": "VST",
+  "description": "RNA sequencing alglorithm. Performs variance stabilizing transformation for each gene across each samples.",
+  "tags": ["RNA-seq", "differential expression", "genomics", "normalization"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_R_operator"],
-  "properties": []
+  "urls": ["https://github.com/tercen/vst_operator"],
+  "properties": [
+    {
+      "kind": "BooleanProperty",
+      "name": "blind",
+      "defaultValue": false,
+      "description": "A logical variable indicating whether the transformation should be blind to the experimental factors."
+    }
+  ]
 }
-
 

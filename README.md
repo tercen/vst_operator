@@ -1,50 +1,34 @@
-# Template R operator
-
-The `Template R operator` is a template repository for the creation of R operators in Tercen. An overview of steps for developing an operator are:
-
-1. create a github repo
-2. install tercen_studio
-3. login to tercen_studio
-4. git clone the newly created repo
-5. start developing in R in tercen_studio
-6. add R packages to the repo
-7. push to the github repo
-8. go to tercen and install the operator
-
-More information can be found in [Tercen app builder's guide](https://tercen.github.io/appbuilders-guide/).
-
-Below is the operator README standard structure:
+# DESeq2_two_conditions operator
 
 ##### Description
 
-The `Template R operator` is a template repository for the creation of R operators in Tercen.
+`vst_operator` performs the variance stabilising transformation on count data using the `DESeq2` package from BioConductor (Love, et al, Genome Biology, 2014).
 
 ##### Usage
 
-Input projection|.
----|---
-`x-axis`        | type, description 
-`y-axis`        | type, description 
-`row`           | type, description 
-`column`        | type, description 
-`colors`        | type, description 
-`labels`        | type, description 
+| Input projection | Description                      |
+| ---------------- | -------------------------------- |
+| `row`            | Gene name/identifier             |
+| `column`         | Sample name/identifier           |
+| `color`          | Represents the groups to compare |
+| `y-axis`         | Sequence counts                  |
 
-Input parameters|.
----|---
-`input_var`        | parameter description
+| Input parameters | Description                                                                              |
+| -----------------| ---------------------------------------------------------------------------------------- |
+| `blind`  | Logical, whether the transformation should be blind to the experimental factors (default = FALSE) |
 
-Output relations|.
----|---
-`output_var`        | output relation
-`Operator view`        | view of the Shiny application
+|  Output relations  | Description                                                                |
+| ------------------ | -------------------------------------------------------------------------- |
+| `vsd`           | numeric, the variance stabilized values                                       |
 
 ##### Details
 
-Details on the computation.
+The operator uses the `DESeq2` package from BioConductor.
 
-##### See Also
+##### References
 
-[template_shiny_operator](https://github.com/tercen/template_shiny_operator)
-, [template_docker_operator](https://github.com/tercen/template_docker_operator)
+Love MI, Huber W, Anders S (2014). “Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2.” Genome Biology, 15, 550. doi: 10.1186/s13059-014-0550-8.
+
+See ["Analyzing RNA-seq data with DESeq2"](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) for further information on DESeq2 by Love, et al.
+
 
