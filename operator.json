@@ -1,7 +1,7 @@
 {
   "name": "VST",
-  "description": "RNA sequencing alglorithm. Performs variance stabilizing transformation for each gene across each samples.",
-  "tags": ["RNA-seq", "differential expression", "genomics", "normalization"],
+  "description": "Variance stabilizing transformation for RNA-seq data.",
+  "tags": ["RNA-seq", "data preprocessing"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/vst_operator"],
   "properties": [
@@ -13,4 +13,3 @@
     }
   ]
 }
-
