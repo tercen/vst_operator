@@ -1,4 +1,4 @@
-# DESeq2_two_conditions operator
+# VST
 
 ##### Description
 

@@ -1,4 +1,4 @@
-"y_values","sample..Gene ID","js0.ID","js0.condition"
+"y_values","sample..Gene ID","sample..variable","js0.condition"
 140,"FBgn0000008","treated1","treated"
 88,"FBgn0000008","treated2","treated"
 4,"FBgn0000014","treated1","treated"
