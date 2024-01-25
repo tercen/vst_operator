@@ -1,9 +1,17 @@
 {
   "name": "VST",
   "description": "Variance stabilizing transformation for RNA-seq data.",
-  "tags": ["RNA-seq", "data preprocessing"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/vst_operator"],
+  "tags": [
+    "omics",
+    "RNA-seq",
+    "preprocessing"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/vst_operator"
+  ],
   "properties": [
     {
       "kind": "BooleanProperty",
