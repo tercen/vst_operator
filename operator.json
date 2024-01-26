@@ -1,6 +1,6 @@
 {
   "name": "VST",
-  "description": "Variance stabilizing transformation for RNA-seq data.",
+  "description": "Performs a Variance Stabilizing Transformation on RNA sequencing data.",
   "tags": [
     "omics",
     "RNA-seq",
